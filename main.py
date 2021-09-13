@@ -7,7 +7,7 @@ from selenium.common.exceptions import WebDriverException
 print('----------\nDeveloped by Hikko\nhttps://github.com/Hikk0o\n----------\n')
 print('Файл с логами coef.txt будет находиться в корневой папке программы.\nЧтобы закрыть программу, нажмите Ctrl+C.\n')
 options = webdriver.ChromeOptions()
-# options.headless = True
+options.headless = True
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
 print('Создание браузера...')
 driver = webdriver.Chrome('C:/Chrome/chromedriver.exe', options=options)
